@@ -4,7 +4,7 @@
  3. запуск дев сервера: в папке skillbox-js-lastwork выполнить команду: `npm run build`, 'http://localhost:8080'
 
 # Тесты
-  1. установка пакетов (если ранее не установили): в папкe project запустить команду: `npm i`
+  1. установка пакетов (если ранее не установили): в папкe skillbox-js-lastwork запустить команду: `npm i`
   2. запуск бэк сервера: в папке public выполнить команду: `npm start`, в тестах исспользуется порт `http://localhost:3000`
   3. запуск дев сервера: в папке skillbox-js-lastwork выполнить команду: `npm run dev`, в тестах исспользуется порт `http://localhost:8080`
   4. в папке skillbox-js-lastwork выполнить команду: `npm run test`
