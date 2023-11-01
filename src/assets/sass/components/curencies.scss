@@ -1,0 +1,273 @@
+.account-curencies {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 588px;
+  min-height: 411px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.acount-curencies-title {
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.curency-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.curency-name {
+  overflow: hidden;
+  color: #000;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.curency-name::after {
+  content: '....................................................................';
+}
+
+.curency-amount {
+  color: #000;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 2px;
+}
+
+.real-time-curency-change {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 703px;
+  height: 816px;
+  border-radius: 50px;
+  background: #E5E5E5;
+}
+
+.real-time-course-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.real-time-course-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.curency-course-name {
+
+  overflow: hidden;
+  color: #000;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.curency-course-name::after {
+  content: '.............................................................';
+  padding-left: 10px;
+}
+.real-time-curencies-course-title {
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.positive-course .curency-course-name::after {
+  color: var(--amount-plus)
+}
+
+.negative-course .curency-course-name::after {
+  color: var(--amount-minus)
+}
+
+.excange-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 36px;
+  color: #000;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 2px;
+}
+
+.positive-course .excange-rate {
+  background-image: url('../img/plus-exchange-rate.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 20px 10px;
+}
+
+.negative-course .excange-rate {
+  background-image: url('../img/minus-exchange-rate.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 20px 10px;
+}
+
+//обмен валюты
+.curency-exchange-form {
+  position: relative;
+  padding: 50px 50px 62px 50px;
+  margin-top: 44px;
+  width: 587px;
+  height: 273px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+
+  .error-transfer-wrapper {
+    top: 46px;
+    left: 210px;
+  }
+
+  .error-tooltip-triangle {
+    top: 25px;
+    left: 215px;
+  }
+
+  .error-tooltip {
+    top: -18px;
+    left: 105px
+  }
+}
+
+.exchange-form-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: 'Work Sans',sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.curency-exchange-wpapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exchange-form-left-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.exchange-form-left-block {
+  width: 358px;
+}
+
+.curency-from-change-label, .curency-to-change-label  {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.curency-from-change-label::after, .curency-to-change-label::after {
+  z-index: 10;
+  position: absolute;
+  content: '';
+  top: 20px;
+  right: 16px;
+  border: 5px solid transparent;
+  border-top: 5px solid #000;
+}
+
+.curency-from-change-label--focus::after, .curency-to-change-label--focus::after {
+  transform: rotate(180deg);
+  top: 15px;
+}
+
+.curency-from-change-input, .curency-to-change-input, .curency-exchange-sum-input {
+  width: 134px;
+  padding: 8px 16px;
+  border-radius: 7px;
+  border: 1px solid var(--gray-colors-gray-5, #9CA3AF);
+  background: var(--gray-colors-white, #FFF);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.curency-exchange-sum-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.curency-exchange-sum-input {
+  width: 298px;
+}
+
+.curency-exchange-btn {
+  height: 100%;
+  padding: 0px 13px;
+  border-radius: 7px;
+  background: var(--brand-colors-primary, #116ACC);
+  color: var(--gray-colors-white, #FFF);
+  text-align: center;
+  font-size: 16px;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.curency-from-wrapper, .curency-to-wrapper {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 42px;
+  left: 40px;
+  width: 134px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.curency-to-wrapper {
+  top: 42px;
+  left: 30px;
+}
+
+.curency-from-name, .curency-to-name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.curency-from-name:hover, .curency-to-name:hover {
+  background-color: var(--active-btn);
+}

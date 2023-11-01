@@ -1,0 +1,424 @@
+.upper-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.account-details-title {
+  font-size: 34px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.68px;
+}
+
+.back-btn {
+  padding: 16px 24px;
+  padding-left: 58px;
+  background-color: var(--primary);
+  border-radius: 7px;
+  background-image: url('../img/arrow.svg');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 24px center;
+  color: var(--gray-colors-white, #FFF);
+  color: var(--white-color);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+// .back-btn:hover {
+//   color: #FFF;
+//   background: #B3CEE2;
+//   background-image: url('../img/arrow.svg');
+//   background-size: 24px 24px;
+//   background-repeat: no-repeat;
+//   background-position: 24px center;
+// }
+
+.back-btn:active {
+  color: #FFF;
+  background: linear-gradient(0deg, #000 0%, #000 100%), #116ACC;
+}
+
+.second-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.account-details-number {
+  font-size: 34px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: -0.68px;
+}
+
+.balance-text {
+  display: flex;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.balance-value {
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.third-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.new-transaction-form {
+  position: relative;
+  width: 606px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  border-radius: 50px;
+  background-color: var(--grey-color-7);
+}
+
+.new-transaction-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.recipient-label, .transaction-count-label {
+  margin-bottom: 25px;
+  color: var(--secondary-1);
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.recipient-input, .transaction-count-input {
+  position: relative;
+  width: 300px;
+  margin-left: 16px;
+  padding: 8px 16px;
+  color: var(--grey-color-4);
+  border-radius: 7px;
+  border: 1px solid var(--grey-color-5);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.input-error-validation {
+  outline: 1px solid var(--state-colors-error, #BA0000);
+  border: none;
+}
+
+.recipient-label {
+  position: relative;
+}
+.recipient-label::after {
+  z-index: 10;
+  position: absolute;
+  content: '';
+  top: 20px;
+  right: 16px;
+  border: 5px solid transparent;
+  border-top: 5px solid #000;
+}
+
+.recipient-label-focus::after {
+  transform: rotate(180deg);
+  top: 15px;
+}
+
+.autocomlite-wrapper {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  width: 300px;
+  min-height: 40px;
+  top: 41px;
+  right: 0;
+  padding: 10px 0;
+  background-color: var(--white-color);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.autocomlite-item {
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.autocomlite-item:hover {
+  background-color: var(--active-btn);
+}
+
+.push-transaction-btn {
+  margin-left: 206px;
+  align-self: flex-start;
+  padding: 16px 24px;
+  padding-left: 58px;
+  background-color: var(--primary);
+  border-radius: 7px;
+  background-image: url('../img/mail.svg');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 24px center;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.balance-dynamic {
+  width: 684px;
+  height: 284px;
+  padding: 25px 50px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.balance-dynamic-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.bar-chart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 198px;
+}
+
+.diogram {
+  display: flex;
+  justify-content: space-between;
+  width: 510px;
+  margin-bottom: 8px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid #000;
+}
+
+.month-wrapper {
+  display: flex;
+  align-items: flex-end;
+  width: 50px;
+  height: 165px;
+  // background-color: red;
+}
+
+.month-scale {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.scale-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first-month {
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.scale-wrapper {
+  padding-left: 24px;
+  padding-bottom: 26px;
+}
+
+.max-balance-value, .zero-value {
+  width: 100px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+.month-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+
+.transaction-history, .balance-history__history-transaction {
+  cursor: pointer;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  border-radius: 56px;
+  background-color: var(--grey-color-7);
+}
+
+.transaction-history-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.transaction-history-table {
+  width: 100%;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 49px;
+  border-radius: 15px;
+  background-color: var(--primary);
+  color: var(--white-color);
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.sender-account-column {
+  width: 231px;
+  text-align: center;
+}
+
+.recipient-account-column {
+  width: 240px;
+  text-align: center;
+}
+
+.summa-column {
+  width: 100px;
+  text-align: center;
+}
+
+.amount-plus {
+  color: var(--amount-plus);
+}
+
+.amount-minus {
+  color: var(--amount-minus);
+}
+
+.date-column {
+  width: 79px;
+  text-align: center;
+}
+
+.transaction-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 49px;
+  border-bottom: 2px solid var(--primary-border);
+  color: var(--grey-color-2);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.transaction-recipient {
+  width: 240px;
+  text-align: center;
+}
+.transaction-amount {
+  width: 100px;
+  text-align: center;
+}
+
+.transactions-data {
+  // overflow: scroll;
+  min-height: 208px;
+}
+
+.error-transfer-wrapper {
+  position: absolute;
+  top: 21px;
+  left: 255px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/warning.svg');
+  background-repeat: no-repeat;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+.error-tooltip.visible {
+  display: flex;
+}
+
+.error-tooltip-triangle.visible {
+  display: flex;
+}
+
+.error-tooltip {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: -40px;
+  left: 145px;
+  width: 250px;
+  height: 51px;
+  border-radius: 4px;
+  background: var(--state-colors-error, #BA0000);
+  box-shadow: 0px 6.400000095367432px 14.399999618530273px 0px rgba(0, 0, 0, 0.13), 0px 1.2000000476837158px 3.5999999046325684px 0px rgba(0, 0, 0, 0.10);
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 13px;
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.13px;
+}
+
+.error-tooltip-triangle {
+  display: none;
+  position: absolute;
+  top: 3px;
+  left: 260px;
+  width: 15px;
+  height: 15px;
+  background: var(--state-colors-error, #BA0000);
+  box-shadow: 0px 6.400000095367432px 14.399999618530273px 0px rgba(0, 0, 0, 0.13), 0px 1.2000000476837158px 3.5999999046325684px 0px rgba(0, 0, 0, 0.10);
+  transform: rotate(45deg)
+}

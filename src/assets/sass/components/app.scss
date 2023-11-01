@@ -1,0 +1,440 @@
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  min-height: 100px;
+  background-color: var(--blue-background);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.info-place {
+  display: flex;
+  align-items: center;
+  min-height: 922px;
+  // overflow: scroll;
+}
+
+.authorization {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 500px;
+  background-color: var(--grey-color-7);
+  border-radius: 50px;
+
+  &__title {
+    padding-left: 115px;
+    margin-bottom: 35px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .error-transfer-wrapper {
+   top: 285px;
+  }
+
+  .error-tooltip-triangle{
+    top: 265px;
+  }
+
+  .error-tooltip {
+    top: 220px;
+  }
+}
+
+.label-login {
+  padding-left: 50px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#input-login {
+  position: relative;
+  width: 300px;
+  margin-left: 18px;
+  padding: 10px 10px 10px 16px;
+  border: 1px solid var(--grey-color-5);
+  border-radius: 7px;
+
+  &::placeholder {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-color-4);
+  }
+  &:focus-visible {
+    border: 1px solid var(--primary);
+    background: rgba(160, 195, 255, 0.10);
+  }
+}
+
+.input-wrapper-login {
+  margin-bottom: 25px;
+}
+
+.label-password {
+  padding-left: 40px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#input-password {
+  position: relative;
+  width: 300px;
+  margin-left: 18px;
+  padding: 10px 10px 10px 16px;
+  border: 1px solid var(--grey-color-5);
+  border-radius: 7px;
+
+  &::placeholder {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-color-4);
+  }
+  &:focus-visible {
+    border: 1px solid var(--primary);
+    background: rgba(160, 195, 255, 0.10);
+  }
+}
+
+.input-wrapper-psw {
+  margin-bottom: 30px;
+}
+
+.enter-btn {
+  width: 83px;
+  height: 48px;
+  margin-left: 115px;
+  padding: 14px 21px;
+  background-color: var(--primary);
+  border-radius: 7px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.just-validate-error-label {
+  margin-left: 115px;
+}
+
+// menu
+
+.menu-btn {
+  padding: 14px 24px;
+  color: var(--primary);
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 7px;
+  border: 2px solid var(--primary);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.menu-btn:not(:last-child) {
+  margin-right: 25px;
+}
+
+.active-btn {
+  background-color: var(--active-btn);
+}
+
+.list-styles {
+  display: block;
+  padding: 50px;
+}
+
+//accounts block
+.option-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accounts-title {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 34px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.68px;
+}
+
+.new-account-btn {
+  padding: 16px 24px;
+  padding-left: 58px;
+  background-color: var(--primary);
+  color: var(--white-color);
+  border-radius: 7px;
+  background-image: url('../img/plus.svg');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 24px center;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.list-wrapper {
+  padding-top: 50px;
+}
+
+.accounts-list {
+  display: flex;
+  flex-wrap: wrap;
+  // gap: 70px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 70px * 2) / 3);
+  height: 156px;
+  margin-bottom: 50px;
+  display: flex;
+  padding: 22px;
+  border-radius: 9px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.list-item:not(:nth-child(3n)) {
+  margin-right: 70px;
+}
+
+.account-number {
+  margin-bottom: 9px;
+  color: var(--secondary-1);
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.18px;
+}
+
+.account-balance {
+  margin-bottom: 9px;
+  color: var(--secondary-1);
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.date-last-transaction {
+  font-weight: 400;
+}
+
+.date-transaction-bold{
+  color: #000;
+  font-size: 13px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.26px;
+}
+
+.account-detail-btn {
+  padding: 16px 24px;
+  background-color: var(--primary);
+  color: var(--white-color);
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+//choices select
+
+.select-wrapper {
+  position: relative;
+  padding: 8px 16px;
+  width: 300px;
+  border-radius: 7px;
+  border: 1px solid var(--blue-background);
+  background: var(--white-color);
+  cursor: pointer;
+  color: var(--grey-color-2);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+
+  &::after {
+    content: '';
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: 26px;
+    border: 5px solid transparent;
+    border-top: 5px solid #000;
+  }
+}
+
+.select-wrapper-open::after{
+  transform: rotate(180deg) translateY(5px);
+}
+
+.dropdown {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  width: 300px;
+  top: 40px;
+  left: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--white-color);
+  border-radius: 7px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-open {
+  display: block;
+}
+
+.option {
+  position: relative;
+  padding: 8px 16px;
+  cursor: pointer;
+
+  &:hover {
+    background: #A0C3FF;
+  }
+}
+
+.sorting-checked {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+}
+
+//валидация
+
+.input-wrapper {
+  position: relative;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  width: 400px;
+  top: 40px;
+  left: 0;
+  color: rgba(186, 0, 0, 1) !important;
+
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+#input-login.just-validate-error-field, #input-password.just-validate-error-field {
+  outline: 1px solid var(--state-colors-error, #BA0000);
+  border: none;
+}
+
+.label-error-active {
+  position: absolute;
+  z-index: 100;
+  top: 5px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  padding-left: 30px;
+  background-image: url('../img/warning.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.label-success-active {
+  position: absolute;
+  z-index: 100;
+  top: 5px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  padding-left: 30px;
+  background-image: url('../img/success.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+#input-login.just-validate-success-field, #input-password.just-validate-success-field {
+  outline: 1px solid var(--state-colors-error, rgba(118, 202, 102, 1));
+  border: none;
+}
+
+//прелодер
+.preloader {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 28%;
+  left: 49%;
+  width: 64px;
+  height: 64px;
+  background-image: url('../img/preloader.svg');
+  background-repeat: no-repeat;
+  animation: spin 1s infinite linear;
+}
+
+.preloading {
+  display: block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

@@ -1,0 +1,185 @@
+.balance-history__upper-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.balance-history__second-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.balance-history__dinamyc-balance {
+  padding: 26px 98px 19px 98px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dinamic-balance-year-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.diagram-balance-year-wrapper {
+  display: flex;
+
+}
+
+.diagram-balance-year {
+  width: 1000px;
+  height: 165px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: 1px solid #000;
+  background: #FFF;
+  padding-left: 46px;
+  padding-right: 46px;
+  overflow: hidden;
+}
+
+.diagram-year-month {
+  width: 50px;
+  background-color: var(--primary);
+}
+
+.months-scale-year {
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-left: 46px;
+  padding-right: 46px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+.month-year-name {
+  width: 50px;
+  text-align: center;
+}
+
+.balance-value-scale-year {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 46px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-family: 'Work Sans',sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+.max-y-scale-value {
+  width: 200px;
+}
+
+.balance-history__relation-inoutcome {
+  margin-top: 50px;
+  padding: 25px 98px 20px 98px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.diagram-year-month-wrapper {
+  width: 50px;
+  position: relative;
+}
+
+.diagram-year-month-in {
+  position: absolute;
+  background-color: var(--amount-plus);
+  width: 50px;
+  bottom: 0;
+}
+
+.diagram-year-month-out {
+  position: absolute;
+  background-color: var(--amount-minus);
+  width: 50px;
+  bottom: 0;
+}
+
+.balance-history__history-transaction {
+  margin-top: 50px;
+  padding-bottom: 24px;
+  cursor: default;
+}
+
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-block {
+  display: flex;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey-color-5);
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.pagination-btn:not(:last-child) {
+  margin-right: 5px;
+}
+
+.pagination-btn-active {
+  background-color: var(--primary);
+  color: var(--white-color);
+}
+
+.previous-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/pagination-arrow-prev.svg');
+  background-repeat: no-repeat;
+  background-size: 5px 10px;
+  background-position: center center;
+}
+
+.next-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/pagination-arrow-next.svg');
+  background-repeat: no-repeat;
+  background-size: 5px 10px;
+  background-position: center center;
+}
+
+// .first-pagination {
+//   color: #FFF;
+//   background-color: var(--primary);
+// }
+
+.history-transactions-wrapper {
+  padding-bottom: 20px;
+}
+
+.paginatio-btns-wrapper {
+  display: flex;
+  
+}

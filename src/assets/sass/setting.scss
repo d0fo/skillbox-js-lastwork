@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+input, button {
+  outline: none;
+}
+
+input:focus-visible {
+  border-radius: 7px;
+  border: 1px solid var(--primary);
+  background-color: rgba(160, 195, 255, 0.10);
+}
+
+button:hover {
+  color: #FFF;
+  background-color: #B3CEE2;
+}
+
+button:active {
+  color: #FFF;
+  background-color: var(--brand-colors-secondary-1, #182233);
+}
